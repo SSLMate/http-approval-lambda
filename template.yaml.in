@@ -4,7 +4,7 @@ Description: Integrate SSLMate HTTP Approval with Application Load Balancers and
 Parameters:
   HTTPApprovalProxy:
     Type: String
-    Description: The URL of your HTTP Approval Proxy as listed on your SSLMate account's API Credentials Page
+    Description: The URL of the HTTP Approval Proxy shown on your SSLMate account's API Credentials Page
 Resources:
   sslmatehttpapproval:
     Type: 'AWS::Serverless::Function'
