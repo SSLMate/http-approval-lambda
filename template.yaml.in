@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
-Description: Integrate SSLMate HTTP Approval with Application Load Balancers and Path-Based Routing
+Description: Automatically approve SSLMate certificates for domains that are pointed at your Application Load Balancer
 Parameters:
   HTTPApprovalProxy:
     Type: String
@@ -12,7 +12,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.7
       CodeUri: s3://opsmate-serverlessrepo/sslmate_http_approval-__VERSION__.zip
-      Description: Integrate SSLMate HTTP Approval with Application Load Balancers and Path-Based Routing
+      Description: Automatically approve SSLMate certificates for domains that are pointed at your Application Load Balancer
       MemorySize: 128
       Timeout: 8
       Environment:
