@@ -4,7 +4,7 @@
 # See COPYING file for license information.
 #
 
-VERSION = 0.0.4
+VERSION = 0.1.0
 
 all: sslmate_http_approval-$(VERSION).zip template.yaml
 
