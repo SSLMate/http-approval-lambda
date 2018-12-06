@@ -1,0 +1,9 @@
+1. Increase VERSION in Makefile.
+
+2. Commit and tag.
+
+3. Run make to build sslmate_http_approval-$VERSION.zip and template.yaml.
+
+4. Upload sslmate_http_approval-$VERSION.zip to opsmate-serverlessrepo S3 bucket.
+
+5. Go to https://console.aws.amazon.com/serverlessrepo/home?region=us-east-1, open the application, click Publish New Version, and upload the new template.yaml.
