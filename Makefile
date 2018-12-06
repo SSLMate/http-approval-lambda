@@ -11,7 +11,7 @@ all: sslmate_http_approval-$(VERSION).zip template.yaml
 sslmate_http_approval-$(VERSION).zip: lambda_function.py
 	zip sslmate_http_approval-$(VERSION).zip $^
 
-template.yaml: template.yaml.in
+template.yaml: template.yaml.in Makefile
 	m4 -D__VERSION__=$(VERSION) < $< > $@
 
 clean:
