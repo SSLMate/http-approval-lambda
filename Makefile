@@ -1,10 +1,10 @@
 #
-# Copyright (c) 2018 Opsmate, Inc.
+# Copyright (c) 2018-2023 Opsmate, Inc.
 #
 # See COPYING file for license information.
 #
 
-VERSION = 0.1.0
+VERSION = 0.2.0
 
 all: sslmate_http_approval-$(VERSION).zip template.yaml
 
